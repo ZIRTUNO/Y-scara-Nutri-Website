@@ -1,0 +1,28 @@
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 0 40px;
+}
+
+.gallery-item {
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
+  overflow: hidden;
+  transform: translateY(0);
+  transition:
+    opacity 1s cubic-bezier(.2, .7, .2, 1),
+    transform .6s cubic-bezier(.2, .7, .2, 1);
+  box-shadow: 0 20px 40px -20px rgba(110, 78, 84, 0.3);
+}
+.gallery-item:hover { transform: translateY(-8px); }
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+.gallery-item:hover img { transform: scale(1.06); }

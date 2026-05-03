@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yáscara Lima - Nutricionista</title>
+  <meta name="description" content="Yáscara Lima — Nutricionista. Acompanhamento humanizado, plano alimentar individual e estratégia para uma rotina saudável e sustentável." />
+  <meta name="theme-color" content="#F9F3ED" />
+  <meta name="robots" content="index, follow, noarchive, noimageindex" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet (imports all component styles) -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- Shared SVG defs (gradients reused inside icons) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#E8C98A" />
+        <stop offset="50%"  stop-color="#C9A05E" />
+        <stop offset="100%" stop-color="#8B6A35" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="wrap row">
+      <a href="#top" class="brand" style="text-decoration:none;color:inherit">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="assets/logo-mark.png" alt="" />
+        </span>
+        <div>
+          <div class="name">Yáscara Lima</div>
+          <div class="role">Nutricionista</div>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a
+        href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
+        target="_blank" rel="noopener"
+        class="nav-cta"
+      >Falar com Yáscara</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="panel">
+      <a href="#sobre"      data-close><span>Sobre</span><span class="num">01</span></a>
+      <a href="#servicos"   data-close><span>Serviços</span><span class="num">02</span></a>
+      <a href="#beneficios" data-close><span>Benefícios</span><span class="num">03</span></a>
+      <a href="#contato"    data-close><span>Contato</span><span class="num">04</span></a>
+      <a
+        href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
+        target="_blank" rel="noopener"
+        class="drawer-cta"
+      >Falar com Yáscara</a>
+      <div class="drawer-foot">Yáscara Lima · Nutricionista</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grain"></div>
+    </div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span class="dot"></span>Nutrição clínica & lifestyle</div>
+        <h1 class="reveal d2">Nutrição que <em>transforma</em> sua rotina&nbsp;por inteiro.</h1>
+        <p class="lede reveal d3">
+          Acompanhamento humanizado e estratégico para mulheres que querem viver com mais leveza,
+          saúde e propósito. Sem dietas restritivas e sem regras impossíveis.
+        </p>
+
+        <div class="cta-row reveal d4">
+          <a
+            href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20acompanhamento.%20Quando%20podemos%20conversar%3F"
+            target="_blank" rel="noopener"
+            class="btn btn-primary"
+          >
+            Quero começar agora
+            <span class="arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+          <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+        </div>
+
+        <div class="hero-stats reveal d4">
+          <div class="stat">
+            <div class="num">+2 <span style="font-size:18px;color:var(--rose)">anos</span></div>
+            <div class="lbl">de experiência clínica</div>
+          </div>
+          <div class="stat">
+            <div class="num">+500</div>
+            <div class="lbl">mulheres atendidas</div>
+          </div>
+          <div class="stat">
+            <div class="num">100%</div>
+            <div class="lbl">plano individual</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-img-wrap reveal d3">
+        <div class="floating-leaves"></div>
+        <div class="hero-img">
+          <img src="assets/yascara-blazer.jpg" alt="Yáscara Lima" />
+        </div>
+
+        <div class="hero-badge b1">
+          <div class="ring"><span>YL</span></div>
+          <div>
+            <div class="label">CRN ativo</div>
+            <div class="value">Nutricionista</div>
+          </div>
+        </div>
+
+        <div class="hero-badge b2">
+          <div class="ring" style="background:linear-gradient(135deg,var(--rose),var(--mauve))">
+            <span style="color:var(--cream);background:transparent">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <div class="label">Avaliação</div>
+            <div class="value">4.9 <span style="color:var(--gold-2);font-size:13px">★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Saúde sustentável <i class="sep"></i> Rotina realista <i class="sep"></i> Plano personalizado <i class="sep"></i> Cuidado humanizado <i class="sep"></i> Resultados reais <i class="sep"></i></span>
+      <span>Saúde sustentável <i class="sep"></i> Rotina realista <i class="sep"></i> Plano personalizado <i class="sep"></i> Cuidado humanizado <i class="sep"></i> Resultados reais <i class="sep"></i></span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="section-pad" id="sobre">
+    <div class="wrap split">
+      <div class="about-img reveal">
+        <img src="assets/yascara-tablet.jpg" alt="Yáscara Lima atendimento" />
+        <div class="about-card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24" />
+            </svg>
+          </div>
+          <div>
+            <div class="t">Atendimento online & presencial</div>
+            <div class="s">Brasil inteiro · agenda flexível</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal d2">
+        <div class="eyebrow"><span class="dot"></span>Sobre mim</div>
+        <h2>Cuidado <em>individual</em>, estratégia que cabe na sua vida.</h2>
+        <p>
+          Sou Yáscara Lima, nutricionista apaixonada por transformar a relação das pessoas com a
+          comida. Acredito que mudar hábitos é mais sobre consciência do que sobre esforço, por
+          isso, cada plano é desenhado a partir da sua história, rotina e objetivos.
+        </p>
+        <p style="margin-top:14px">
+          Aqui, dieta não é castigo: é um caminho construído junto, com leveza, ciência e estratégia.
+        </p>
+        <div class="signature">
+          <span class="serif">Yáscara Lima</span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section-pad" id="servicos" style="padding-top:60px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>Serviços</div>
+        <h2>Três caminhos para uma <em>nova relação</em> com a sua saúde.</h2>
+        <p>Escolha o formato que faz sentido para o seu momento. Todos com método claro, escuta atenta e acompanhamento real.</p>
+      </div>
+
+      <div class="services">
+        <!-- Card 01 -->
+        <article class="card reveal">
+          <div class="num">01</div>
+          <div class="icon">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path class="gd" d="M6 24V10a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v14" stroke-width="1.4" />
+              <path class="gd" d="M6 24h20" stroke-width="1.4" />
+              <path class="gd" d="M11 14h10M11 18h6" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Consultoria<br/>Nutricional</h3>
+          <p>Orientação personalizada para reorganizar hábitos, rotina alimentar e tomada de decisão com clareza estratégica para escolhas mais conscientes no dia a dia.</p>
+          <ul>
+            <li>Avaliação completa & escuta ativa</li>
+            <li>Direcionamento prático e realista</li>
+            <li>Diagnóstico de hábitos atuais</li>
+          </ul>
+          <a
+            href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Tenho%20interesse%20na%20Consultoria%20Nutricional.%20Pode%20me%20contar%20como%20funciona%3F"
+            target="_blank" rel="noopener"
+            class="more"
+          >
+            Quero orientação
+            <span class="arr">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <!-- Card 02 (featured) -->
+        <article class="card card--featured reveal d2">
+          <div class="num">02</div>
+          <div class="icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#FFF8F2" stroke-width="1.4">
+              <path d="M16 4c-2 5-7 6-7 12a7 7 0 0 0 14 0c0-6-5-7-7-12z" />
+              <path d="M13 16c0 2 1 4 3 4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Acompanhamento<br/>+ Plano Alimentar</h3>
+          <p>Acompanhamento contínuo com plano alimentar individual, ajustes mensais e suporte humanizado para uma transformação consistente, sem extremos.</p>
+          <ul>
+            <li>Plano alimentar 100% personalizado</li>
+            <li>Acompanhamento mensal próximo</li>
+            <li>Ajustes conforme sua evolução</li>
+          </ul>
+          <a
+            href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Quero%20saber%20mais%20sobre%20o%20Acompanhamento%20com%20Plano%20Alimentar."
+            target="_blank" rel="noopener"
+            class="more"
+          >
+            Quero meu plano
+            <span class="arr">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <!-- Card 03 -->
+        <article class="card reveal d3">
+          <div class="num">03</div>
+          <div class="icon">
+            <svg viewBox="0 0 32 32" fill="none">
+              <circle class="gd" cx="11" cy="12" r="4" stroke-width="1.4" />
+              <circle class="gd" cx="22" cy="12" r="4" stroke-width="1.4" />
+              <path class="gd" d="M5 24c0-3 3-5 6-5s6 2 6 5M16 24c0-3 3-5 6-5s5 2 5 5" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Parcerias<br/>& Projetos</h3>
+          <p>Colaborações estratégicas com marcas, academias, clínicas e empresas que compartilham o compromisso com saúde, bem-estar e estilo de vida saudável.</p>
+          <ul>
+            <li>Marcas, clínicas e academias</li>
+            <li>Conteúdo, palestras & projetos</li>
+            <li>Networking de alto padrão</li>
+          </ul>
+          <a
+            href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Gostaria%20de%20conversar%20sobre%20uma%20parceria%20com%20voc%C3%AA."
+            target="_blank" rel="noopener"
+            class="more"
+          >
+            Vamos conversar
+            <span class="arr">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section-pad" id="beneficios" style="padding-top:30px">
+    <div class="benefits-section">
+      <div class="blob-3"></div>
+      <div class="benefits-grid">
+        <div class="reveal">
+          <div class="eyebrow"><span class="dot"></span>Por que aqui?</div>
+          <h2 class="benefits-heading">
+            Um método que respeita <em>você,</em> sua rotina e seus resultados.
+          </h2>
+
+          <div class="benefits-list">
+            <div class="benefit">
+              <div class="b-num">01</div>
+              <div class="b-text">
+                <h4>Plano alimentar individual</h4>
+                <p>Construído a partir da sua história, gostos e contexto.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="b-num">02</div>
+              <div class="b-text">
+                <h4>Acompanhamento humanizado</h4>
+                <p>Escuta atenta, vínculo e ajustes contínuos. Você não caminha sozinha.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="b-num">03</div>
+              <div class="b-text">
+                <h4>Foco em resultado real</h4>
+                <p>Estratégia clara, marcos definidos e evolução medida com critério clínico.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="b-num">04</div>
+              <div class="b-text">
+                <h4>Saúde sustentável</h4>
+                <p>Hábitos que continuam funcionando depois. Sem efeito sanfona.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="b-num">05</div>
+              <div class="b-text">
+                <h4>Rotina realista</h4>
+                <p>Plano que respeita seu ritmo, seu trabalho, sua família e o que você gosta de comer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal d2" style="position:relative">
+          <div class="benefits-img">
+            <img src="assets/yascara-food.jpg" alt="Atendimento Yáscara Lima" />
+          </div>
+          <div class="benefits-quote">
+            <p>"Mais do que mudar o prato, mudar a forma como você se cuida."</p>
+            <cite>— Yáscara Lima</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section style="padding:80px 0 0">
+    <div class="gallery">
+      <div class="gallery-item reveal">   <img src="assets/yascara-mirror.jpg"        alt="" /></div>
+      <div class="gallery-item reveal d2"><img src="assets/yascara-laptop-stairs.jpg" alt="" /></div>
+      <div class="gallery-item reveal d3"><img src="assets/yascara-laptop-out.jpg"    alt="" /></div>
+      <div class="gallery-item reveal d4"><img src="assets/yascara-railing.jpg"       alt="" /></div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contato">
+    <div class="final-cta">
+      <div class="eyebrow"><span class="dot"></span>Vamos começar</div>
+      <h2>Sua próxima fase começa com um simples <em>"tem que querer".</em></h2>
+      <p>Agende uma conversa inicial e descubra como um plano feito para você pode transformar sua relação com a comida e com você mesma.</p>
+
+      <a
+        href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20estou%20pronta%20para%20come%C3%A7ar.%20Quando%20podemos%20conversar%3F"
+        target="_blank" rel="noopener"
+        class="btn btn-gold"
+      >
+        Sim, eu quero
+        <span class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </span>
+      </a>
+
+      <div class="contact-row">
+        <a
+          href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20queria%20falar%20com%20voc%C3%AA."
+          target="_blank" rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+          WhatsApp direto
+        </a>
+        <a href="https://www.instagram.com/yascaralima/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+          </svg>
+          @yascaralima
+        </a>
+        <a href="mailto:contato@yascaralima.com.br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          yascaralimanutri@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap row">
+      <div class="brand-mark">
+        <img src="assets/logo.png" alt="" />
+        <div class="copy">© 2026 Yáscara Lima · Nutricionista · Todos os direitos reservados</div>
+      </div>
+      <div class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating action button -->
+  <a
+    href="https://wa.me/5532999834565?text=Oi%2C%20Y%C3%A1scara%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
+    target="_blank" rel="noopener"
+    class="whatsapp-fab"
+    aria-label="Conversar no WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16.02 3C9.4 3 4.02 8.38 4.02 15c0 2.36.69 4.56 1.88 6.41L4 29l7.78-2.04A11.94 11.94 0 0 0 16.02 27c6.62 0 12-5.38 12-12s-5.38-12-12-12zm0 21.6a9.55 9.55 0 0 1-4.86-1.33l-.35-.21-4.62 1.21 1.23-4.5-.23-.36A9.6 9.6 0 1 1 16.02 24.6zm5.5-7.18c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.36.23-.66.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.36.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.63-.93-2.23-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5 0 1.48 1.08 2.9 1.23 3.1.15.2 2.13 3.25 5.16 4.55.72.3 1.28.48 1.72.62.72.23 1.38.2 1.9.12.58-.08 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.07-.13-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/protect.js"      defer></script>
+  <script src="js/mobile-menu.js"  defer></script>
+  <script src="js/reveal.js"       defer></script>
+  <script src="js/card-tilt.js"    defer></script>
+  <script src="js/hero-parallax.js" defer></script>
+</body>
+</html>

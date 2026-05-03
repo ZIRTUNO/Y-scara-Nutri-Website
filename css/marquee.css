@@ -1,0 +1,34 @@
+/* Marquee */
+
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid rgba(42, 31, 34, 0.08);
+  padding: 22px 0;
+  background: var(--cream-2);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  animation: scroll 35s linear infinite;
+  width: max-content;
+  align-items: center;
+}
+
+.marquee span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--mauve-deep);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.marquee .sep {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+  display: inline-block;
+}

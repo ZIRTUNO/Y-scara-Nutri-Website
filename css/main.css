@@ -1,0 +1,92 @@
+@import "base.css";
+@import "layout.css";
+@import "animations.css";
+
+@import "navigation.css";
+@import "buttons.css";
+@import "hero.css";
+@import "marquee.css";
+@import "about.css";
+@import "services.css";
+@import "benefits.css";
+@import "gallery.css";
+@import "final-cta.css";
+@import "footer.css";
+@import "whatsapp-fab.css";
+
+@import "responsive.css";
+
+
+.hero h1 em,
+.final-cta h2 em,
+.gold {
+  font-style: italic;
+  display: inline-block;
+  background: linear-gradient(
+    100deg,
+    var(--gold-2)  0%,
+    var(--gold-1) 12%,
+    #FFF6DB       25%,
+    var(--gold-1) 38%,
+    var(--gold-2) 50%,
+    var(--gold-1) 62%,
+    #FFF6DB       75%,
+    var(--gold-1) 88%,
+    var(--gold-2) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 14px rgba(232, 201, 138, 0.35));
+  animation: cta-shimmer 8s linear infinite;
+}
+
+.split h2 em,
+.section-head h2 em,
+.benefits-grid .benefits-heading em {
+  font-style: italic;
+  display: inline-block;
+  background: linear-gradient(
+    100deg,
+    var(--mauve)      0%,
+    var(--rose)      14%,
+    var(--rose-soft) 27%,
+    var(--rose)      40%,
+    var(--mauve)     52%,
+    var(--rose)      65%,
+    var(--rose-soft) 78%,
+    var(--rose)      90%,
+    var(--mauve)    100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(167, 120, 128, 0.22));
+  animation: cta-shimmer 8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 em,
+  .final-cta h2 em,
+  .gold {
+    animation: none;
+    background: none;
+    color: var(--gold-1);
+    -webkit-text-fill-color: var(--gold-1);
+    filter: none;
+  }
+
+  .split h2 em,
+  .section-head h2 em,
+  .benefits-grid .benefits-heading em {
+    animation: none;
+    background: none;
+    color: var(--mauve);
+    -webkit-text-fill-color: var(--mauve);
+    filter: none;
+  }
+}

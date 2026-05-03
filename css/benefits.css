@@ -1,0 +1,123 @@
+/* Benefits */
+
+.benefits-section {
+  background: var(--cream-2);
+  border-radius: 36px;
+  margin: 0 40px;
+  padding: 100px 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-section .blob-3 {
+  position: absolute;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(207, 132, 137, 0.4), transparent 70%);
+  filter: blur(70px);
+  top: -100px; right: -80px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits-grid .benefits-heading {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(36px, 4.5vw, 56px);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  margin: 18px 0 36px;
+}
+.benefits-grid .benefits-heading em {
+  color: var(--mauve);
+  font-style: italic;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.benefit {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-top: 1px solid rgba(42, 31, 34, 0.1);
+  transition: padding-left .5s ease;
+  cursor: default;
+}
+.benefit:last-child { border-bottom: 1px solid rgba(42, 31, 34, 0.1); }
+.benefit:hover { padding-left: 14px; }
+
+.benefit .b-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--mauve);
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.benefit .b-text h4 {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.benefit .b-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #7A6266;
+  line-height: 1.6;
+}
+
+.benefits-img {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 50px 100px -40px rgba(110, 78, 84, 0.4);
+  transform: rotate(2deg);
+}
+.benefits-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefits-quote {
+  position: absolute;
+  bottom: -30px; left: -30px;
+  background: var(--cream);
+  padding: 22px 26px;
+  border-radius: 18px;
+  max-width: 240px;
+  box-shadow: 0 30px 60px -20px rgba(110, 78, 84, 0.3);
+  transform: rotate(-2deg);
+  border: 1px solid rgba(232, 201, 138, 0.4);
+}
+.benefits-quote p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.benefits-quote cite {
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mauve);
+}
