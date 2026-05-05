@@ -3,7 +3,6 @@
   const drawer = document.getElementById('mobileDrawer');
   if (!toggle || !drawer) return;
 
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const minScrollDuration = 1120;
   const maxScrollDuration = 1750;
   const scrollMsPerPixel = 0.38;
@@ -45,7 +44,7 @@
 
     document.documentElement.style.scrollBehavior = 'auto';
 
-    if (reducedMotion.matches || Math.abs(distance) < 2) {
+    if (Math.abs(distance) < 2) {
       window.scrollTo(0, targetY);
       document.documentElement.style.scrollBehavior = previousScrollBehavior;
       setHash(hash);

@@ -65,6 +65,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .whatsapp-fab::before { animation: none; display: none; }
-  .whatsapp-fab { transition: none; }
+  .whatsapp-fab::before { animation-duration: 4.8s; }
+  .whatsapp-fab { transition-duration: .5s; }
 }

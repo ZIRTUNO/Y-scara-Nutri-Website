@@ -73,20 +73,14 @@
   .hero h1 em,
   .final-cta h2 em,
   .gold {
-    animation: none;
-    background: none;
-    color: var(--gold-1);
-    -webkit-text-fill-color: var(--gold-1);
-    filter: none;
+    animation-duration: 14s;
+    filter: drop-shadow(0 0 6px rgba(232, 201, 138, 0.18));
   }
 
   .split h2 em,
   .section-head h2 em,
   .benefits-grid .benefits-heading em {
-    animation: none;
-    background: none;
-    color: var(--mauve);
-    -webkit-text-fill-color: var(--mauve);
-    filter: none;
+    animation-duration: 14s;
+    filter: drop-shadow(0 0 5px rgba(167, 120, 128, 0.14));
   }
 }

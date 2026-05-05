@@ -230,8 +230,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero-badge.b1 .ring {
-    animation: none;
-    background-size: 100% 100%;
+    animation: cta-shimmer 12s linear infinite;
   }
 }
 .hero-badge .label {

@@ -74,11 +74,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .final-cta h2 em {
-    animation: none;
-    background: none;
-    color: var(--gold-1);
-    -webkit-text-fill-color: var(--gold-1);
-    filter: none;
+    animation-duration: 14s;
+    filter: drop-shadow(0 0 6px rgba(232, 201, 138, 0.18));
   }
 }
 
