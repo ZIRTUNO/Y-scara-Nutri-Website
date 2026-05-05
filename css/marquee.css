@@ -10,10 +10,16 @@
 .marquee-track {
   display: flex;
   gap: 0;
-  animation: scroll 35s linear infinite;
+  animation: marquee-scroll var(--marquee-duration, 70s) linear infinite;
   width: max-content;
   align-items: center;
   will-change: transform;
+}
+
+.marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
 }
 
 .marquee span {
@@ -34,4 +40,11 @@
   border-radius: 50%;
   background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
   display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    transform: none;
+  }
 }

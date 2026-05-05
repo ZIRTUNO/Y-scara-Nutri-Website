@@ -6,7 +6,8 @@
   background: linear-gradient(135deg, var(--mauve-deep) 0%, var(--mauve) 60%, var(--rose) 100%);
   color: var(--cream);
   border-radius: 36px;
-  margin: 130px 40px 80px;
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--panel-max));
+  margin: 130px auto 80px;
   padding: 110px 70px;
   text-align: center;
 }

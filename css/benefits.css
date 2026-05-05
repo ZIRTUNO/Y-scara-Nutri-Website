@@ -3,7 +3,8 @@
 .benefits-section {
   background: var(--cream-2);
   border-radius: 36px;
-  margin: 0 40px;
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--panel-max));
+  margin: 0 auto;
   padding: 100px 70px;
   position: relative;
   overflow: hidden;
@@ -52,11 +53,19 @@
   align-items: flex-start;
   padding: 24px 0;
   border-top: 1px solid rgba(42, 31, 34, 0.1);
-  transition: padding-left .5s ease;
   cursor: default;
 }
 .benefit:last-child { border-bottom: 1px solid rgba(42, 31, 34, 0.1); }
-.benefit:hover { padding-left: 14px; }
+
+.benefit .b-num,
+.benefit .b-text {
+  transition: transform .5s ease;
+}
+
+.benefit:hover .b-num,
+.benefit:hover .b-text {
+  transform: translateX(14px);
+}
 
 .benefit .b-num {
   font-family: var(--serif);

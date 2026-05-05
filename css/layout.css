@@ -1,14 +1,14 @@
 /* Layout */
 
 .wrap {
-  max-width: 1320px;
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--wrap-max));
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
 }
 
 section { position: relative; }
 
-.section-pad { padding: 130px 0; }
+.section-pad { padding: var(--section-y) 0; }
 
 .section-head {
   text-align: center;

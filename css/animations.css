@@ -16,7 +16,7 @@
 .reveal.d3 { transition-delay: .24s; }
 .reveal.d4 { transition-delay: .36s; }
 
-@keyframes scroll {
+@keyframes marquee-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }

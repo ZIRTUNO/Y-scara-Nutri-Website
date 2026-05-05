@@ -4,7 +4,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  padding: 0 40px;
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--panel-max));
+  margin: 0 auto;
+  padding: 0;
 }
 
 .gallery-item {
