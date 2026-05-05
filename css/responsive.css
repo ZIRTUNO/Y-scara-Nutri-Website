@@ -109,7 +109,7 @@
 
   /* Marquee */
   .marquee { padding: 18px 0; }
-  .marquee span { font-size: 18px; gap: 36px; }
+  .marquee span { font-size: 18px; gap: 36px; padding-right: 36px; }
 
   /* Sections */
   .section-pad { padding: 72px 0; }
@@ -225,4 +225,41 @@
 /* 680px */
 @media (max-width: 680px) {
   .services { grid-template-columns: 1fr; }
+}
+
+/* Large desktops (>=1440px) — open up the layout so it does not feel cramped */
+@media (min-width: 1440px) {
+  .wrap { max-width: 1440px; padding: 0 56px; }
+  .section-pad { padding: 150px 0; }
+
+  .hero { padding: 180px 0 130px; }
+  .hero-grid { gap: 100px; }
+
+  .benefits-section { margin: 0 56px; padding: 120px 90px; }
+  .final-cta { margin: 130px 56px 70px; padding: 130px 90px; }
+  .gallery { padding: 0 56px; }
+}
+
+/* Wider desktops (>=1680px) */
+@media (min-width: 1680px) {
+  .wrap { max-width: 1560px; padding: 0 64px; }
+  .section-pad { padding: 170px 0; }
+
+  .hero { padding: 200px 0 150px; }
+  .hero-grid { gap: 120px; }
+  .hero .lede { font-size: 17.5px; max-width: 540px; }
+
+  .services { gap: 36px; }
+  .benefits-section { margin: 0 64px; padding: 140px 110px; }
+  .benefits-grid { gap: 100px; }
+  .final-cta { margin: 150px 64px 80px; padding: 150px 110px; }
+  .gallery { padding: 0 64px; gap: 18px; }
+}
+
+/* Ultrawide (>=1920px) */
+@media (min-width: 1920px) {
+  .wrap { max-width: 1680px; padding: 0 72px; }
+  .benefits-section { margin: 0 72px; }
+  .final-cta { margin: 160px 72px 90px; }
+  .gallery { padding: 0 72px; }
 }
